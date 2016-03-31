@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AXIinterfacefor65816
+	OPTION supported_peripherals = (AXIinterfacefor65816);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AXIinterfacefor65816;
+END DRIVER

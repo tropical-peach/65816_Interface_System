@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Mar 28 21:51:44 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_rst_processing_system7_0_71M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Interface_Master_BD_rst_processing_system7_0_71M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 6)) to current project options.
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1459400559">
+  <File Type="VDS-TIMING-PB" Name="Interface_Master_BD_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Interface_Master_BD_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Interface_Master_BD_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Interface_Master_BD_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Interface_Master_BD_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Interface_Master_BD_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Interface_Master_BD_wrapper.vds"/>
+  <File Type="PA-TCL" Name="Interface_Master_BD_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_2/synth_2.psg"/>
+  <File Type="VDS-HWDEF" Name="Interface_Master_BD_wrapper.hwdef"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_2/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_2/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/Interface_Master_BD.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/Interface_Master_BD/Interface_Master_BD.bd"/>
+        <Attr Name="ImportTime" Val="1459032808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1459032808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/Interface_Master_BD_processing_system7_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/Interface_Master_BD_rst_processing_system7_0_71M_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/Interface_Master_BD_AXIinterfacefor65816_0_0.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Interface_Master_BD_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/65816_Interface_System/ZYBO_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1459032739"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

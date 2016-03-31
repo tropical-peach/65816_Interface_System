@@ -1,0 +1,21 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Mar 28 21:51:44 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Interface_Master_BD_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+

@@ -1,0 +1,71 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Mar 26 17:13:34 2016
+# Process ID: 16857
+# Log file: /home/steven/vivado.log
+# Journal file: /home/steven/vivado.jou
+#-----------------------------------------------------------
+ERROR: [Common 17-354] Could not open '/home/steven/.Xilinx/Vivado/tclapp/manifest.tcl' for writing.
+ERROR: [Common 17-356] Failed to install all user apps.
+start_gui
+open_project /home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Dropbox/65C816_SoftCore/65C816_Repo/Vivado_Custom_IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ERROR: [Common 17-354] Could not open '/home/steven/.Xilinx/Vivado/tclapp/manifest.tcl' for writing.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+archive_project /home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr.zip -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Dropbox/65C816_SoftCore/65C816_Repo/Vivado_Custom_IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ERROR: [Common 17-354] Could not open '/home/steven/.Xilinx/Vivado/tclapp/manifest.tcl' for writing.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+ERROR: [Coretcl 2-15] (archive_project): Received exception from open project
+current_project 65816_Interface_System
+archive_project /home/steven/Desktop/65816_Interface_System.xpr.zip -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Dropbox/65C816_SoftCore/65C816_Repo/Vivado_Custom_IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ERROR: [Common 17-354] Could not open '/home/steven/.Xilinx/Vivado/tclapp/manifest.tcl' for writing.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+ERROR: [Coretcl 2-15] (archive_project): Received exception from open project
+current_project 65816_Interface_System
+archive_project /home/steven/Desktop/PROJ.xpr.zip -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Dropbox/65C816_SoftCore/65C816_Repo/Vivado_Custom_IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+ERROR: [Common 17-354] Could not open '/home/steven/.Xilinx/Vivado/tclapp/manifest.tcl' for writing.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+ERROR: [Coretcl 2-15] (archive_project): Received exception from open project
+current_project 65816_Interface_System
+archive_project /home/steven/Desktop/65816_Interface_System.xpr.zip -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Dropbox/65C816_SoftCore/65C816_Repo/Vivado_Custom_IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'

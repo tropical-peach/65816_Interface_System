@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Mar 30 23:03:20 2016
+# Process ID: 25067
+# Log file: /home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/Interface_Master_BD_wrapper.vds
+# Journal file: /home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source Interface_Master_BD_wrapper.tcl

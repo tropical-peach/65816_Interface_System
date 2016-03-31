@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/steven/Desktop/C816_Test/spellcheck/TB_65816_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="snes65816func" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="tb_65816" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/tb_65816/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/tru_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tru_clk</obj_property>
+      <obj_property name="ObjectShortName">tru_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/d_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_bus[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/addr_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus[23:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/emulation_select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">emulation_select</obj_property>
+      <obj_property name="ObjectShortName">emulation_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_x[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_x[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_y[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_y[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_sp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_sp[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_sp[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_pc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_pc[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_proc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_proc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_proc[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/reg_dbr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_dbr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_dbr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/vpb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vpb</obj_property>
+      <obj_property name="ObjectShortName">vpb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/psr" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">psr</obj_property>
+      <obj_property name="ObjectShortName">psr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/data_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rdy</obj_property>
+      <obj_property name="ObjectShortName">data_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/cntr" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr</obj_property>
+      <obj_property name="ObjectShortName">cntr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/cycle" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">cycle</obj_property>
+      <obj_property name="ObjectShortName">cycle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[0:36]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:36]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider49" type="divider">
+      <obj_property name="label">VVVV UUT VVVVV</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/addr_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus[23:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/d_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_bus[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/d_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_bus[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/chunk_pull" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">chunk_pull[31:0]</obj_property>
+      <obj_property name="ObjectShortName">chunk_pull[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/op_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op_code[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/effective_memory_pointer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">effective_memory_pointer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">effective_memory_pointer[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/memory_pointer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memory_pointer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_pointer[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/y_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/x_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/stackpointer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">stackpointer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">stackpointer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_65816/uut/adr_type" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">adr_type</obj_property>
+      <obj_property name="ObjectShortName">adr_type</obj_property>
+      <obj_property name="label">adr_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="group116" type="group">
+      <obj_property name="label">Control Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_65816/uut/data_rdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_rdy</obj_property>
+         <obj_property name="ObjectShortName">data_rdy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/tru_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tru_clk</obj_property>
+         <obj_property name="ObjectShortName">tru_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/instruction_info" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instruction_info[11:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction_info[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/tru_clk_cntr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tru_clk_cntr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tru_clk_cntr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/tru_cpu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tru_cpu[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tru_cpu[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/type_info" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">type_info[3:0]</obj_property>
+         <obj_property name="ObjectShortName">type_info[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/instruction_size" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instruction_size[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction_size[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/addressing_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addressing_done</obj_property>
+         <obj_property name="ObjectShortName">addressing_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/addressing_on" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addressing_on</obj_property>
+         <obj_property name="ObjectShortName">addressing_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/decode_on" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">decode_on</obj_property>
+         <obj_property name="ObjectShortName">decode_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/decode_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">decode_done</obj_property>
+         <obj_property name="ObjectShortName">decode_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/memory_calculate_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">memory_calculate_done</obj_property>
+         <obj_property name="ObjectShortName">memory_calculate_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/memory_calculate_on" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">memory_calculate_on</obj_property>
+         <obj_property name="ObjectShortName">memory_calculate_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/memory_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">memory_done</obj_property>
+         <obj_property name="ObjectShortName">memory_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/math_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">math_done</obj_property>
+         <obj_property name="ObjectShortName">math_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/pc_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pc_done</obj_property>
+         <obj_property name="ObjectShortName">pc_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/flag_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">flag_done</obj_property>
+         <obj_property name="ObjectShortName">flag_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/store_back" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">store_back</obj_property>
+         <obj_property name="ObjectShortName">store_back</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/push_to_stack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">push_to_stack</obj_property>
+         <obj_property name="ObjectShortName">push_to_stack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/ready_up" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ready_up</obj_property>
+         <obj_property name="ObjectShortName">ready_up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/stack_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stack_done</obj_property>
+         <obj_property name="ObjectShortName">stack_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_65816/uut/exchange_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">exchange_done</obj_property>
+         <obj_property name="ObjectShortName">exchange_done</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
