@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
---Date        : Wed Mar 30 23:02:38 2016
+--Date        : Thu Mar 31 17:26:54 2016
 --Host        : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target Interface_Master_BD.bd
 --Design      : Interface_Master_BD
@@ -1186,7 +1186,9 @@ entity Interface_Master_BD is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    clk_test : out STD_LOGIC;
     locked : out STD_LOGIC;
+    reset_65816_module : in STD_LOGIC;
     resetn : in STD_LOGIC
   );
 end Interface_Master_BD;
@@ -1308,6 +1310,7 @@ architecture STRUCTURE of Interface_Master_BD is
   port (
     clk : in STD_LOGIC;
     tru_clk : in STD_LOGIC;
+    reset_65816_module : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -1416,6 +1419,7 @@ architecture STRUCTURE of Interface_Master_BD is
   signal processing_system7_0_axi_periph_M00_AXI_WREADY : STD_LOGIC;
   signal processing_system7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
+  signal reset_65816_module_1 : STD_LOGIC;
   signal resetn_1 : STD_LOGIC;
   signal rst_processing_system7_0_71M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_processing_system7_0_71M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1453,11 +1457,14 @@ architecture STRUCTURE of Interface_Master_BD is
   signal NLW_rst_processing_system7_0_71M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_processing_system7_0_71M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
+  clk_test <= clk_wiz_0_clk_out1;
   locked <= clk_wiz_0_locked;
+  reset_65816_module_1 <= reset_65816_module;
   resetn_1 <= resetn;
 AXIinterfacefor65816_0: component Interface_Master_BD_AXIinterfacefor65816_0_0
     port map (
       clk => clk_wiz_0_clk_out1,
+      reset_65816_module => reset_65816_module_1,
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(6 downto 0) => processing_system7_0_axi_periph_M00_AXI_ARADDR(6 downto 0),
       s00_axi_aresetn => rst_processing_system7_0_71M_peripheral_aresetn(0),

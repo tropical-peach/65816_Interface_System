@@ -51,61 +51,58 @@ Command: synth_design -top Interface_Master_BD_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
-INFO: [Common 17-86] Your Synthesis license expires in 29 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 28 day(s)
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:01:30 . Memory (MB): peak = 935.734 ; gain = 177.277 ; free physical = 2446 ; free virtual = 14560
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:01:30 . Memory (MB): peak = 935.734 ; gain = 177.273 ; free physical = 8724 ; free virtual = 16409
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_wrapper' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:42]
-INFO: [Synth 8-3491] module 'Interface_Master_BD' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1166' bound to instance 'Interface_Master_BD_i' of component 'Interface_Master_BD' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1194]
-INFO: [Synth 8-3491] module 'Interface_Master_BD_AXIinterfacefor65816_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:56' bound to instance 'AXIinterfacefor65816_0' of component 'Interface_Master_BD_AXIinterfacefor65816_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1458]
-INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_AXIinterfacefor65816_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_wrapper' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:44]
+INFO: [Synth 8-3491] module 'Interface_Master_BD' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1166' bound to instance 'Interface_Master_BD_i' of component 'Interface_Master_BD' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1196]
+INFO: [Synth 8-3491] module 'Interface_Master_BD_AXIinterfacefor65816_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:56' bound to instance 'AXIinterfacefor65816_0' of component 'Interface_Master_BD_AXIinterfacefor65816_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1464]
+INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_AXIinterfacefor65816_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'AXIinterfacefor65816_v1_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0.vhd:5' bound to instance 'U0' of component 'AXIinterfacefor65816_v1_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'AXIinterfacefor65816_v1_0__parameterized0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'AXIinterfacefor65816_v1_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0.vhd:5' bound to instance 'U0' of component 'AXIinterfacefor65816_v1_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'AXIinterfacefor65816_v1_0__parameterized0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0.vhd:52]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'AXIinterfacefor65816_v1_0_S00_AXI' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:5' bound to instance 'AXIinterfacefor65816_v1_0_S00_AXI_inst' of component 'AXIinterfacefor65816_v1_0_S00_AXI' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'AXIinterfacefor65816_v1_0_S00_AXI__parameterized0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-3491] module 'AXIinterfacefor65816_v1_0_S00_AXI' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:5' bound to instance 'AXIinterfacefor65816_v1_0_S00_AXI_inst' of component 'AXIinterfacefor65816_v1_0_S00_AXI' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'AXIinterfacefor65816_v1_0_S00_AXI__parameterized0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:89]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'Soft_65C816' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:45' bound to instance 'HEART' of component 'Soft_65C816' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:218]
-INFO: [Synth 8-638] synthesizing module 'Soft_65C816' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:64]
-WARNING: [Synth 8-614] signal 'op_code' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1766]
-WARNING: [Synth 8-614] signal 'instruction_size' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1895]
-WARNING: [Synth 8-614] signal 'chunk_pull' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1895]
-WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1930]
-WARNING: [Synth 8-614] signal 'op_code' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1930]
+INFO: [Synth 8-3491] module 'Soft_65C816' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:45' bound to instance 'HEART' of component 'Soft_65C816' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'Soft_65C816' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:65]
+WARNING: [Synth 8-614] signal 'op_code' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1767]
+WARNING: [Synth 8-614] signal 'instruction_size' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1896]
+WARNING: [Synth 8-614] signal 'chunk_pull' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1896]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1931]
+WARNING: [Synth 8-614] signal 'op_code' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:1931]
 WARNING: [Synth 8-3848] Net EMULATION_SELECT in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:51]
-WARNING: [Synth 8-3848] Net VPB in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Soft_65C816' (1#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:64]
-INFO: [Synth 8-226] default block is never used [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:384]
-INFO: [Synth 8-226] default block is never used [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:766]
-WARNING: [Synth 8-614] signal 'Output_Addr_Bus' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_EMULATION_SELECT' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_A' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_X' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_Y' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_SP' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_PC' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-614] signal 'Output_REG_Proc' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:761]
-WARNING: [Synth 8-3848] Net Output_EMULATION_SELECT in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:200]
-WARNING: [Synth 8-3848] Net Output_REG_A in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:201]
-WARNING: [Synth 8-3848] Net Output_REG_X in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:202]
-WARNING: [Synth 8-3848] Net Output_REG_Y in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:203]
-WARNING: [Synth 8-3848] Net Output_REG_SP in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:204]
-WARNING: [Synth 8-3848] Net Output_REG_PC in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:205]
-WARNING: [Synth 8-3848] Net Output_REG_Proc in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:206]
-WARNING: [Synth 8-3848] Net Output_REG_DBR in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:207]
-INFO: [Synth 8-256] done synthesizing module 'AXIinterfacefor65816_v1_0_S00_AXI__parameterized0' (2#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'AXIinterfacefor65816_v1_0__parameterized0' (3#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_AXIinterfacefor65816_0_0' (4#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:84]
-INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1484]
-INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1488]
-INFO: [Synth 8-3491] module 'Interface_Master_BD_clk_wiz_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.vhd:75' bound to instance 'clk_wiz_0' of component 'Interface_Master_BD_clk_wiz_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1492]
+WARNING: [Synth 8-3848] Net VPB in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'Soft_65C816' (1#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:65]
+INFO: [Synth 8-226] default block is never used [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:364]
+INFO: [Synth 8-226] default block is never used [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:746]
+WARNING: [Synth 8-614] signal 'Addr_Bus' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'EMULATION_SELECT' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_A' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_X' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_Y' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_SP' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_PC' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_Proc' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'REG_DBR' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'state_machine' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'RDY' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'D_BUS' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+WARNING: [Synth 8-614] signal 'DATA_RDY' is read in the process but is not in the sensitivity list [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:741]
+INFO: [Synth 8-256] done synthesizing module 'AXIinterfacefor65816_v1_0_S00_AXI__parameterized0' (2#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'AXIinterfacefor65816_v1_0__parameterized0' (3#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v4_0/6310ab63/hdl/AXIinterfacefor65816_v1_0.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_AXIinterfacefor65816_0_0' (4#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_AXIinterfacefor65816_0_0/synth/Interface_Master_BD_AXIinterfacefor65816_0_0.vhd:85]
+INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1491]
+INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1495]
+INFO: [Synth 8-3491] module 'Interface_Master_BD_clk_wiz_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.vhd:75' bound to instance 'clk_wiz_0' of component 'Interface_Master_BD_clk_wiz_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1499]
 INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_clk_wiz_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.vhd:88]
 INFO: [Synth 8-3491] module 'Interface_Master_BD_clk_wiz_0_0_clk_wiz' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0_clk_wiz.vhd:75' bound to instance 'U0' of component 'Interface_Master_BD_clk_wiz_0_0_clk_wiz' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_clk_wiz_0_0_clk_wiz' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0_clk_wiz.vhd:88]
@@ -179,7 +176,7 @@ INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFGCE' [/
 INFO: [Synth 8-113] binding component instance 'clkout2_buf_en' to cell 'BUFH' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0_clk_wiz.vhd:243]
 INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_clk_wiz_0_0_clk_wiz' (5#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0_clk_wiz.vhd:88]
 INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_clk_wiz_0_0' (6#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.vhd:88]
-INFO: [Synth 8-3491] module 'Interface_Master_BD_processing_system7_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/synth/Interface_Master_BD_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'Interface_Master_BD_processing_system7_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1500]
+INFO: [Synth 8-3491] module 'Interface_Master_BD_processing_system7_0_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/synth/Interface_Master_BD_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'Interface_Master_BD_processing_system7_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1507]
 INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_processing_system7_0_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/synth/Interface_Master_BD_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:154]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -1293,7 +1290,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_crossbar_sasd' (
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_axi_crossbar' (40#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/da4c95fc/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_xbar_0' (41#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_xbar_0/synth/Interface_Master_BD_xbar_0.v:57]
 INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_processing_system7_0_axi_periph_0' (42#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:641]
-INFO: [Synth 8-3491] module 'Interface_Master_BD_rst_processing_system7_0_71M_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/synth/Interface_Master_BD_rst_processing_system7_0_71M_0.vhd:59' bound to instance 'rst_processing_system7_0_71M' of component 'Interface_Master_BD_rst_processing_system7_0_71M_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1675]
+INFO: [Synth 8-3491] module 'Interface_Master_BD_rst_processing_system7_0_71M_0' declared at '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/synth/Interface_Master_BD_rst_processing_system7_0_71M_0.vhd:59' bound to instance 'rst_processing_system7_0_71M' of component 'Interface_Master_BD_rst_processing_system7_0_71M_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1682]
 INFO: [Synth 8-638] synthesizing module 'Interface_Master_BD_rst_processing_system7_0_71M_0' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/synth/Interface_Master_BD_rst_processing_system7_0_71M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -1352,10 +1349,10 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (46#1) [/home/steven/Desk
 INFO: [Synth 8-256] done synthesizing module 'sequence' (47#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/7820e39a/hdl/src/vhdl/sequence.vhd:146]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized0' (48#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/7820e39a/hdl/src/vhdl/proc_sys_reset.vhd:199]
 INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_rst_processing_system7_0_71M_0' (49#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/synth/Interface_Master_BD_rst_processing_system7_0_71M_0.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD' (50#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1194]
-INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_wrapper' (51#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD' (50#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD.vhd:1196]
+INFO: [Synth 8-256] done synthesizing module 'Interface_Master_BD_wrapper' (51#1) [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd:44]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:01:58 . Memory (MB): peak = 1081.145 ; gain = 322.688 ; free physical = 2089 ; free virtual = 14229
+Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:01:57 . Memory (MB): peak = 1080.148 ; gain = 321.688 ; free physical = 8572 ; free virtual = 16260
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1365,7 +1362,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:58 . Memory (MB): peak = 1081.145 ; gain = 322.688 ; free physical = 2089 ; free virtual = 14228
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:01:57 . Memory (MB): peak = 1080.148 ; gain = 321.688 ; free physical = 8573 ; free virtual = 16260
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1398,6 +1395,9 @@ Finished Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Int
 Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/Interface_Master_BD_rst_processing_system7_0_71M_0.xdc] for cell 'Interface_Master_BD_i/rst_processing_system7_0_71M'
 Finished Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_rst_processing_system7_0_71M_0/Interface_Master_BD_rst_processing_system7_0_71M_0.xdc] for cell 'Interface_Master_BD_i/rst_processing_system7_0_71M'
 Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'reset_65816_module_IBUF'. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
 Finished Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/constrs_1/imports/65816_Interface_System/ZYBO_Master.xdc]
 Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/dont_touch.xdc]
 Finished Parsing XDC File [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/dont_touch.xdc]
@@ -1413,16 +1413,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1342.477 ; gain = 0.000 ; free physical = 1861 ; free virtual = 14022
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1342.512 ; gain = 0.000 ; free physical = 8418 ; free virtual = 16107
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1861 ; free virtual = 14024
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:02:48 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8417 ; free virtual = 16106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1861 ; free virtual = 14024
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:02:48 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8417 ; free virtual = 16106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1438,10 +1438,10 @@ Applied set_property DONT_TOUCH = true for Interface_Master_BD_i/processing_syst
 Applied set_property DONT_TOUCH = true for Interface_Master_BD_i/processing_system7_0/inst. (constraint file  /home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/dont_touch.xdc, line 31).
 Applied set_property DONT_TOUCH = true for Interface_Master_BD_i/clk_wiz_0/U0. (constraint file  /home/steven/Desktop/65816_Interface_System/65816_Interface_System.runs/synth_2/dont_touch.xdc, line 34).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:02:50 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1884 ; free virtual = 14048
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8418 ; free virtual = 16107
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'decode_on_reg' into 'addressing_on_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:316]
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:363]
+INFO: [Synth 8-4471] merging register 'decode_on_reg' into 'addressing_on_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:317]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:364]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Soft_65C816'
 ROM "state" won't be mapped to RAM because it is too sparse.
 ROM "PC" won't be mapped to RAM because it is too sparse.
@@ -1493,20 +1493,12 @@ INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/7820e39a/hdl/src/vhdl/sequence.vhd:222]
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Soft_65C816'
 WARNING: [Synth 8-3848] Net EMULATION_SELECT in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:51]
-WARNING: [Synth 8-3848] Net VPB in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:61]
-WARNING: [Synth 8-327] inferring latch for variable 'instruction_info_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:338]
-WARNING: [Synth 8-327] inferring latch for variable 'memory_pointer_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:367]
-WARNING: [Synth 8-327] inferring latch for variable 'adr_type_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:363]
-WARNING: [Synth 8-327] inferring latch for variable 'DBR_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:198]
-WARNING: [Synth 8-327] inferring latch for variable 'DP_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:262]
-WARNING: [Synth 8-3848] Net Output_EMULATION_SELECT in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:200]
-WARNING: [Synth 8-3848] Net Output_REG_A in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:201]
-WARNING: [Synth 8-3848] Net Output_REG_X in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:202]
-WARNING: [Synth 8-3848] Net Output_REG_Y in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:203]
-WARNING: [Synth 8-3848] Net Output_REG_SP in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:204]
-WARNING: [Synth 8-3848] Net Output_REG_PC in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:205]
-WARNING: [Synth 8-3848] Net Output_REG_Proc in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:206]
-WARNING: [Synth 8-3848] Net Output_REG_DBR in module/entity AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/rad-/AXIinterfacefor65816_v2_5/cf6f3c8a/hdl/AXIinterfacefor65816_v1_0_S00_AXI.vhd:207]
+WARNING: [Synth 8-3848] Net VPB in module/entity Soft_65C816 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_info_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:339]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_pointer_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:368]
+WARNING: [Synth 8-327] inferring latch for variable 'adr_type_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:364]
+WARNING: [Synth 8-327] inferring latch for variable 'DBR_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:199]
+WARNING: [Synth 8-327] inferring latch for variable 'DP_reg' [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/65C816_Repo/65C816.vhd:263]
 WARNING: [Synth 8-3848] Net ENET0_GMII_TX_EN in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:215]
 WARNING: [Synth 8-3848] Net ENET0_GMII_TX_ER in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:216]
 WARNING: [Synth 8-3848] Net ENET0_GMII_TXD in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:232]
@@ -1531,7 +1523,7 @@ WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_syst
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/ip/Interface_Master_BD_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:02:54 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1867 ; free virtual = 14036
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:02:53 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8410 ; free virtual = 16097
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1564,7 +1556,7 @@ Detailed RTL Component Info :
 	               64 Bit    Registers := 1     
 	               47 Bit    Registers := 2     
 	               36 Bit    Registers := 2     
-	               32 Bit    Registers := 24    
+	               32 Bit    Registers := 21    
 	               24 Bit    Registers := 4     
 	               16 Bit    Registers := 5     
 	               14 Bit    Registers := 2     
@@ -1583,8 +1575,8 @@ Detailed RTL Component Info :
 	   2 Input     64 Bit        Muxes := 1     
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input     36 Bit        Muxes := 2     
-	  32 Input     32 Bit        Muxes := 23    
-	   2 Input     32 Bit        Muxes := 31    
+	   2 Input     32 Bit        Muxes := 28    
+	  32 Input     32 Bit        Muxes := 20    
 	   2 Input     24 Bit        Muxes := 5     
 	  10 Input     24 Bit        Muxes := 2     
 	  17 Input     24 Bit        Muxes := 3     
@@ -1686,13 +1678,13 @@ Detailed RTL Component Info :
 Module AXIinterfacefor65816_v1_0_S00_AXI__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 24    
+	               32 Bit    Registers := 21    
 	                7 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	  32 Input     32 Bit        Muxes := 23    
-	   2 Input     32 Bit        Muxes := 23    
+	   2 Input     32 Bit        Muxes := 20    
+	  32 Input     32 Bit        Muxes := 20    
 	   2 Input      1 Bit        Muxes := 6     
 Module AXIinterfacefor65816_v1_0__parameterized0 
 Detailed RTL Component Info : 
@@ -1982,7 +1974,7 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:02:54 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1867 ; free virtual = 14035
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:02:53 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8410 ; free virtual = 16097
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -2013,9 +2005,9 @@ INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/353278bf/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/353278bf/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:56 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1854 ; free virtual = 14016
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:02:55 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8410 ; free virtual = 16097
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:55 ; elapsed = 00:02:56 . Memory (MB): peak = 1342.477 ; gain = 584.020 ; free physical = 1854 ; free virtual = 14016
+Finished Parallel Reinference  : Time (s): cpu = 00:00:53 ; elapsed = 00:02:55 . Memory (MB): peak = 1342.512 ; gain = 584.051 ; free physical = 8410 ; free virtual = 16097
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2032,19 +2024,19 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:03:04 . Memory (MB): peak = 1342.480 ; gain = 584.023 ; free physical = 1858 ; free virtual = 14011
+Finished Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:03:02 . Memory (MB): peak = 1358.523 ; gain = 600.062 ; free physical = 8371 ; free virtual = 16057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:03:04 . Memory (MB): peak = 1342.480 ; gain = 584.023 ; free physical = 1858 ; free virtual = 14011
+Finished Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:03:02 . Memory (MB): peak = 1358.523 ; gain = 600.062 ; free physical = 8371 ; free virtual = 16057
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:03 ; elapsed = 00:03:04 . Memory (MB): peak = 1342.480 ; gain = 584.023 ; free physical = 1858 ; free virtual = 14011
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:03:02 . Memory (MB): peak = 1358.523 ; gain = 600.062 ; free physical = 8371 ; free virtual = 16057
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:03 ; elapsed = 00:03:04 . Memory (MB): peak = 1342.480 ; gain = 584.023 ; free physical = 1858 ; free virtual = 14011
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:03:02 . Memory (MB): peak = 1358.523 ; gain = 600.062 ; free physical = 8371 ; free virtual = 16057
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -2053,10 +2045,10 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:03:15 . Memory (MB): peak = 1484.473 ; gain = 726.016 ; free physical = 1729 ; free virtual = 13865
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:03:13 . Memory (MB): peak = 1482.516 ; gain = 724.055 ; free physical = 8201 ; free virtual = 15888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:03:16 . Memory (MB): peak = 1500.480 ; gain = 742.023 ; free physical = 1701 ; free virtual = 13842
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:03:14 . Memory (MB): peak = 1498.523 ; gain = 740.062 ; free physical = 8184 ; free virtual = 15871
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2067,109 +2059,72 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[23] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[22] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[21] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[20] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[19] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[18] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[17] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[16] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[15] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[14] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[13] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[12] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[11] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[10] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[9] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[8] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[7] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[6] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[5] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[4] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[3] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[2] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[1] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/effective_memory_pointer_retimed_reg[0] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_572) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_574) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_575) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_576) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_577) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_578) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_579) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_580) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_581) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_582) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_583) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_584) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_585) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_586) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_587) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_588) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_589) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_590) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_591) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_592) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_593) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_594) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_595) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (effective_memory_pointer_reg__0i_596) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[7] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[6] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[5] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[4] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[3] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[2] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[1] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DBR_reg[0] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[15] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[14] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[13] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[12] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[11] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[10] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[9] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[8] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[7] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/DP_reg[6] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/store_back_reg ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[23] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[22] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[21] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[20] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[19] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[18] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[17] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[16] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[15] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[14] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[13] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[12] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[11] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[10] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[9] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[8] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[7] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[6] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[5] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[4] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[3] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[2] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[1] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/PC_reg[0] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[23] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[22] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[21] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[20] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[19] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[18] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[17] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[16] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/write_back_location_reg[15] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[31] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[30] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[29] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[28] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[27] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[26] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[25] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[24] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[23] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[22] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[21] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[20] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[19] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[18] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[17] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[16] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[15] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[14] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[13] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[12] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[11] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[10] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[9] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[8] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[7] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[6] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[5] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[4] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[3] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[2] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/slv_reg12_reg[1] ) is unused and will be removed from module Interface_Master_BD_AXIinterfacefor65816_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[37] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[65] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[64] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[63] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[62] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[49] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[48] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[43] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[42] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[41] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[40] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/wrap_cmd_0/axlen_cnt_reg[4] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/wrap_cmd_0/axlen_cnt_reg[4] ) is unused and will be removed from module Interface_Master_BD_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_sasd.crossbar_sasd_0/reg_slice_r/skid_buffer_reg[35] ) is unused and will be removed from module Interface_Master_BD_xbar_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[1] ) is unused and will be removed from module Interface_Master_BD_xbar_0.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[0] ) is unused and will be removed from module Interface_Master_BD_xbar_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module Interface_Master_BD_rst_processing_system7_0_71M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module Interface_Master_BD_rst_processing_system7_0_71M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module Interface_Master_BD_rst_processing_system7_0_71M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module Interface_Master_BD_rst_processing_system7_0_71M_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:03:21 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1682 ; free virtual = 13818
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:03:21 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8138 ; free virtual = 15824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2217,7 +2172,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \n_0_inst/gen_a
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:03:22 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1677 ; free virtual = 13813
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:03:22 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8141 ; free virtual = 15828
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2230,7 +2185,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:03:22 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1678 ; free virtual = 13814
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:03:22 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8141 ; free virtual = 15828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2242,7 +2197,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:03:23 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1675 ; free virtual = 13813
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:03:23 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8142 ; free virtual = 15829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -2276,47 +2231,47 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BIBUF      |   130|
-|2     |BUFG       |     4|
+|2     |BUFG       |     5|
 |3     |BUFGCE     |     2|
 |4     |BUFH       |     2|
-|5     |CARRY4     |    69|
+|5     |CARRY4     |   135|
 |6     |GND        |     1|
-|7     |LUT1       |   294|
-|8     |LUT2       |   172|
-|9     |LUT3       |   301|
-|10    |LUT4       |   217|
-|11    |LUT5       |   327|
-|12    |LUT6       |  1362|
+|7     |LUT1       |   351|
+|8     |LUT2       |   349|
+|9     |LUT3       |   377|
+|10    |LUT4       |   419|
+|11    |LUT5       |   456|
+|12    |LUT6       |  1405|
 |13    |MMCME2_ADV |     1|
 |14    |MUXCY_L    |    22|
-|15    |MUXF7      |    97|
+|15    |MUXF7      |   115|
 |16    |PS7        |     1|
 |17    |SRL16      |     1|
 |18    |SRL16E     |    22|
 |19    |SRLC32E    |    47|
 |20    |VCC        |     1|
 |21    |XORCY      |    24|
-|22    |FDCE       |    89|
-|23    |FDPE       |     3|
+|22    |FDCE       |   117|
+|23    |FDPE       |     6|
 |24    |FDR        |     8|
-|25    |FDRE       |  1628|
-|26    |FDSE       |    76|
-|27    |LD         |    29|
+|25    |FDRE       |  1566|
+|26    |FDSE       |   100|
+|27    |LD         |    53|
 |28    |LDC        |    12|
-|29    |IBUF       |     2|
-|30    |OBUF       |     1|
+|29    |IBUF       |     3|
+|30    |OBUF       |     2|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 |      |Instance                                           |Module                                                      |Cells |
 +------+---------------------------------------------------+------------------------------------------------------------+------+
-|1     |top                                                |                                                            |  4945|
-|2     |  Interface_Master_BD_i                            |Interface_Master_BD                                         |  4943|
-|3     |    AXIinterfacefor65816_0                         |Interface_Master_BD_AXIinterfacefor65816_0_0                |  3016|
-|4     |      U0                                           |AXIinterfacefor65816_v1_0__parameterized0                   |  3008|
-|5     |        AXIinterfacefor65816_v1_0_S00_AXI_inst     |AXIinterfacefor65816_v1_0_S00_AXI__parameterized0           |  3006|
-|6     |          HEART                                    |Soft_65C816                                                 |  1135|
+|1     |top                                                |                                                            |  5733|
+|2     |  Interface_Master_BD_i                            |Interface_Master_BD                                         |  5728|
+|3     |    AXIinterfacefor65816_0                         |Interface_Master_BD_AXIinterfacefor65816_0_0                |  3801|
+|4     |      U0                                           |AXIinterfacefor65816_v1_0__parameterized0                   |  3764|
+|5     |        AXIinterfacefor65816_v1_0_S00_AXI_inst     |AXIinterfacefor65816_v1_0_S00_AXI__parameterized0           |  3762|
+|6     |          HEART                                    |Soft_65C816                                                 |  2216|
 |7     |    clk_wiz_0                                      |Interface_Master_BD_clk_wiz_0_0                             |    24|
 |8     |      U0                                           |Interface_Master_BD_clk_wiz_0_0_clk_wiz                     |    24|
 |9     |    processing_system7_0                           |Interface_Master_BD_processing_system7_0_0                  |   222|
@@ -2364,13 +2319,13 @@ Report Instance Areas:
 |51    |          SEQ_COUNTER                              |upcnt_n                                                     |    14|
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:03:23 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1675 ; free virtual = 13813
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:03:24 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8144 ; free virtual = 15830
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1529.488 ; gain = 380.410 ; free physical = 1675 ; free virtual = 13813
-Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:03:23 . Memory (MB): peak = 1529.488 ; gain = 771.031 ; free physical = 1675 ; free virtual = 13813
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1542.781 ; gain = 392.668 ; free physical = 8143 ; free virtual = 15830
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:03:24 . Memory (MB): peak = 1542.781 ; gain = 784.320 ; free physical = 8143 ; free virtual = 15830
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 170 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 261 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. Interface_Master_BD_i/clk_wiz_0/U0/clkin1_ibufg 
@@ -2379,19 +2334,19 @@ INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 58 instances were transformed.
+  A total of 82 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 6 instances
   BUFGCE => BUFGCTRL: 2 instances
   FDR => FDRE: 8 instances
-  LD => LDCE: 29 instances
+  LD => LDCE: 53 instances
   LDC => LDCE: 12 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-327 Infos, 187 Warnings, 0 Critical Warnings and 0 Errors encountered.
+290 Infos, 177 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:03:23 . Memory (MB): peak = 1532.488 ; gain = 644.754 ; free physical = 1705 ; free virtual = 13843
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:03:23 . Memory (MB): peak = 1542.785 ; gain = 655.047 ; free physical = 8143 ; free virtual = 15830
 # write_checkpoint -noxdef Interface_Master_BD_wrapper.dcp
 # catch { report_utilization -file Interface_Master_BD_wrapper_utilization_synth.rpt -pb Interface_Master_BD_wrapper_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1532.492 ; gain = 0.000 ; free physical = 1703 ; free virtual = 13842
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 30 23:06:51 2016...
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1542.785 ; gain = 0.000 ; free physical = 8142 ; free virtual = 15829
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 31 17:48:21 2016...

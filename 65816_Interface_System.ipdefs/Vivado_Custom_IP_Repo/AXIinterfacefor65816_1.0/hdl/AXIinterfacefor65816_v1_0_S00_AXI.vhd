@@ -19,7 +19,7 @@ entity AXIinterfacefor65816_v1_0_S00_AXI is
 		
 		clk : in std_logic;
 		tru_clk: in std_logic;
-		
+		reset_65816_module : in std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -171,40 +171,31 @@ architecture arch_imp of AXIinterfacefor65816_v1_0_S00_AXI is
          REG_PC : OUT  std_logic_vector(15 downto 0);
          REG_Proc : OUT  std_logic_vector(7 downto 0);
          REG_DBR : OUT  std_logic_vector(7 downto 0);
+         state_machine   :out    std_logic_vector(15 downto 0);
          VPB : OUT  std_logic
         );
     END COMPONENT;
 
-   --Component Inputs
-    signal reset : std_logic := '0';                                    --  Goes to slave register #9
-    signal D_BUS : std_logic_vector(31 downto 0) := (others => 'Z');    --  Goes to slave register #10
-    signal DATA_RDY: std_logic := '1';                                  --  Goes to slave register #11
 
    --Component Outputs
-    signal Addr_Bus : std_logic_vector(23 downto 0) := (others => '0');
-    signal EMULATION_SELECT : std_logic;
-    signal REG_A : std_logic_vector(15 downto 0);
-    signal REG_X : std_logic_vector(15 downto 0);
-    signal REG_Y : std_logic_vector(15 downto 0);
-    signal REG_SP : std_logic_vector(15 downto 0);
-    signal REG_PC : std_logic_vector(15 downto 0);
-    signal REG_Proc : std_logic_vector(7 downto 0);
-    signal REG_DBR : std_logic_vector(7 downto 0);
+    signal Addr_Bus : std_logic_vector(23 downto 0) := (others=> '0');--  Comes from slave register #0;
+    signal EMULATION_SELECT : std_logic;                              --  Comes from slave register #1
+    signal REG_A : std_logic_vector(15 downto 0);                     --  Comes from slave register #2
+    signal REG_X : std_logic_vector(15 downto 0);                     --  Comes from slave register #3
+    signal REG_Y : std_logic_vector(15 downto 0);                     --  Comes from slave register #4
+    signal REG_SP : std_logic_vector(15 downto 0);                    --  Comes from slave register #5
+    signal REG_PC : std_logic_vector(15 downto 0);                    --  Comes from slave register #6
+    signal REG_Proc : std_logic_vector(7 downto 0);                   --  Comes from slave register #7
+    signal REG_DBR : std_logic_vector(7 downto 0);                    --  Comes from slave register #8
+    signal state_machine    :   std_logic_vector(15 downto 0);        --  Comes from slave register #9
     signal VPB : std_logic;
-    signal RDY : std_logic;
+    signal RDY : std_logic;                                           --  Comes from slave register #10
 
-    --Entity Inputs Signals
+   --Component Inputs
     
-    --Entity Output Signals
-    signal Output_Addr_Bus : std_logic_vector(23 downto 0) := (others => '0');  --  Goes to slave register #0
-    signal Output_EMULATION_SELECT : std_logic;                                 --  Goes to slave register #1
-    signal Output_REG_A : std_logic_vector(15 downto 0);                        --  Goes to slave register #2
-    signal Output_REG_X : std_logic_vector(15 downto 0);                        --  Goes to slave register #3
-    signal Output_REG_Y : std_logic_vector(15 downto 0);                        --  Goes to slave register #4
-    signal Output_REG_SP : std_logic_vector(15 downto 0);                       --  Goes to slave register #5
-    signal Output_REG_PC : std_logic_vector(15 downto 0);                       --  Goes to slave register #6
-    signal Output_REG_Proc : std_logic_vector(7 downto 0);                      --  Goes to slave register #7
-    signal Output_REG_DBR : std_logic_vector(7 downto 0);                       --  Goes to slave register #8
+    --signal reset : std_logic := '0';                                    --  Comes from switch
+    signal D_BUS : std_logic_vector(31 downto 0) := (others => 'Z');    --  Goes to slave register #11
+    signal DATA_RDY: std_logic := '1';                                  --  Comes from slave register #12
     
     --Internal Signals
     
@@ -213,12 +204,15 @@ begin
 
 
     --  BEGIN User designated port maps 
+
+    D_BUS <= slv_reg11;
+    DATA_RDY <= slv_reg12(0);
        
     -- Instantiate the Soft 65816 Unit to be implemented
    HEART: Soft_65C816 PORT MAP (
           clk => clk,
           tru_clk => tru_clk,
-          reset => reset,
+          reset => reset_65816_module,
           Addr_Bus => Addr_Bus,
           D_BUS => D_BUS,
           EMULATION_SELECT => EMULATION_SELECT,
@@ -231,25 +225,11 @@ begin
           REG_PC => REG_PC,
           REG_Proc => REG_Proc,
           REG_DBR => REG_DBR,
+          state_machine => state_machine, 
           VPB => VPB
         );
         
-        --  outputs    
-        slv_reg0(23 downto 0) <=  Output_Addr_Bus       ; 
-        slv_reg1(0) <=  Output_EMULATION_SELECT         ;
-        slv_reg2(15 downto 0) <=  Output_REG_A          ;
-        slv_reg3(15 downto 0) <=  Output_REG_X          ;
-        slv_reg4(15 downto 0) <=  Output_REG_Y          ;
-        slv_reg5(15 downto 0) <=  Output_REG_SP         ;
-        slv_reg6(15 downto 0) <=  Output_REG_PC         ;
-        slv_reg7(7 downto 0) <=  Output_REG_Proc        ;
-        slv_reg8(7 downto 0) <=  Output_REG_DBR         ;
-        slv_reg1(1) <=  RDY                             ;
-        -- inputs
-        reset       <=  slv_reg9(0);
-        D_BUS       <=  slv_reg10;
-        DATA_RDY    <=  slv_reg11(0);
-    
+               
     
     --  END User designated port maps
 
@@ -765,31 +745,31 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00000" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_Addr_Bus), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"00" & Addr_Bus;
 	      when b"00001" =>
-	        reg_data_out <= X"0000000" & b"000" & Output_EMULATION_SELECT;
+	        reg_data_out <= X"0000000" & b"000" & EMULATION_SELECT;
 	      when b"00010" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_A), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"0000" & REG_A;
 	      when b"00011" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_X), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"0000" & REG_X;
 	      when b"00100" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_Y), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"0000" & REG_Y;
 	      when b"00101" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_SP), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"0000" & REG_SP;
 	      when b"00110" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_PC), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"0000" & REG_PC;
 	      when b"00111" =>
-	        reg_data_out <= std_logic_vector(resize(unsigned(Output_REG_Proc), C_S_AXI_DATA_WIDTH));
+	        reg_data_out <= X"000000" & REG_Proc;
 	      when b"01000" =>
-	        reg_data_out <= slv_reg8;
+	        reg_data_out <= X"000000" & REG_DBR;
 	      when b"01001" =>
-	        reg_data_out <= slv_reg9;
+	        reg_data_out <= X"0000" & state_machine;
 	      when b"01010" =>
-	        reg_data_out <= slv_reg10;
+	        reg_data_out <= X"0000000" & b"000" & RDY;
 	      when b"01011" =>
-	        reg_data_out <= slv_reg11;
+	        reg_data_out <= D_BUS;
 	      when b"01100" =>
-	        reg_data_out <= slv_reg12;
+	        reg_data_out <= X"0000000" & b"000" & DATA_RDY;
 	      when b"01101" =>
 	        reg_data_out <= slv_reg13;
 	      when b"01110" =>

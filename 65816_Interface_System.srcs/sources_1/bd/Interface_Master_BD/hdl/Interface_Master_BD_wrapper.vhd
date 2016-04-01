@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
---Date        : Wed Mar 30 23:02:38 2016
+--Date        : Thu Mar 31 17:26:54 2016
 --Host        : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target Interface_Master_BD_wrapper.bd
 --Design      : Interface_Master_BD_wrapper
@@ -34,7 +34,9 @@ entity Interface_Master_BD_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    clk_test : out STD_LOGIC;
     locked : out STD_LOGIC;
+    reset_65816_module : in STD_LOGIC;
     resetn : in STD_LOGIC
   );
 end Interface_Master_BD_wrapper;
@@ -63,8 +65,10 @@ architecture STRUCTURE of Interface_Master_BD_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
+    clk_test : out STD_LOGIC;
     resetn : in STD_LOGIC;
-    locked : out STD_LOGIC
+    locked : out STD_LOGIC;
+    reset_65816_module : in STD_LOGIC
   );
   end component Interface_Master_BD;
 begin
@@ -91,7 +95,9 @@ Interface_Master_BD_i: component Interface_Master_BD
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      clk_test => clk_test,
       locked => locked,
+      reset_65816_module => reset_65816_module,
       resetn => resetn
     );
 end STRUCTURE;

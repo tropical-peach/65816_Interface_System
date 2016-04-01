@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: rad-:user:AXIinterfacefor65816:2.5
--- IP Revision: 3
+-- IP VLNV: rad-:user:AXIinterfacefor65816:4.0
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -57,6 +57,7 @@ ENTITY Interface_Master_BD_AXIinterfacefor65816_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
     tru_clk : IN STD_LOGIC;
+    reset_65816_module : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axi_awvalid : IN STD_LOGIC;
@@ -93,6 +94,7 @@ ARCHITECTURE Interface_Master_BD_AXIinterfacefor65816_0_0_arch OF Interface_Mast
     PORT (
       clk : IN STD_LOGIC;
       tru_clk : IN STD_LOGIC;
+      reset_65816_module : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axi_awvalid : IN STD_LOGIC;
@@ -151,6 +153,7 @@ BEGIN
     PORT MAP (
       clk => clk,
       tru_clk => tru_clk,
+      reset_65816_module => reset_65816_module,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,
       s00_axi_awvalid => s00_axi_awvalid,

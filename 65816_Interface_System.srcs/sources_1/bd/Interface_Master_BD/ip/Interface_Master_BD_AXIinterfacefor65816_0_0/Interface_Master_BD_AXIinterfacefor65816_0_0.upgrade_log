@@ -1,6 +1,100 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Mar 31 17:14:51 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_AXIinterfacefor65816_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Interface_Master_BD_AXIinterfacefor65816_0_0 (rad-:user:AXIinterfacefor65816:4.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Mar 31 16:50:08 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_AXIinterfacefor65816_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Interface_Master_BD_AXIinterfacefor65816_0_0 from rad-:user:AXIinterfacefor65816:3.0 (Rev. 2) to rad-:user:AXIinterfacefor65816:4.0 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Mar 31 16:02:22 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_AXIinterfacefor65816_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Interface_Master_BD_AXIinterfacefor65816_0_0 (rad-:user:AXIinterfacefor65816:3.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Mar 31 15:22:19 2016
+| Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Interface_Master_BD_AXIinterfacefor65816_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Interface_Master_BD_AXIinterfacefor65816_0_0 from rad-:user:AXIinterfacefor65816:2.5 (Rev. 3) to rad-:user:AXIinterfacefor65816:3.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'Interface_Master_BD_AXIinterfacefor65816_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'reset_65816_module'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
 | Date         : Wed Mar 30 19:14:12 2016
 | Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 | Command      : upgrade_ip

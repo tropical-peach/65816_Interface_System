@@ -43,22 +43,23 @@ use IEEE.numeric_std.ALL;
 use work.SNES65816func.all;
 
 entity Soft_65C816 is
-	Port ( clk : in STD_LOGIC;							-- 	Main CLK for system
-		   tru_clk	: in std_logic;						--	True clk for system
-		   reset		: in std_logic;					--	Reset Signal
-		   Addr_Bus : out STD_LOGIC_VECTOR (23 downto 0);--	Address Bus
-		   D_BUS : in STD_LOGIC_VECTOR (31 downto 0);	--	Data Bus
-		   EMULATION_SELECT : out STD_LOGIC;			--	Emulation Bit
-		   RDY : out STD_LOGIC;
-			DATA_RDY: in STD_LOGIC;
-		   REG_A 	:out	std_logic_vector(15 downto 0);
-		   REG_X 	:out	std_logic_vector(15 downto 0);
-		   REG_Y 	:out	std_logic_vector(15 downto 0);
-		   REG_SP 	:out	std_logic_vector(15 downto 0);
-		   REG_PC 	:out	std_logic_vector(15 downto 0);
-			REG_Proc :out	std_logic_vector(7 downto 0);
-			REG_DBR  :out	std_logic_vector(7 downto 0);
-		   VPB : out STD_LOGIC);
+	Port ( clk              :in     STD_LOGIC;							-- 	Main CLK for system
+            tru_clk	        :in     std_logic;						--	True clk for system
+            reset		    :in     std_logic;					--	Reset Signal
+            Addr_Bus        :out    STD_LOGIC_VECTOR (23 downto 0);--	Address Bus
+            D_BUS           :in     STD_LOGIC_VECTOR (31 downto 0);	--	Data Bus
+            EMULATION_SELECT:out    STD_LOGIC;			--	Emulation Bit
+            RDY             :out    STD_LOGIC;
+			DATA_RDY        :in     STD_LOGIC;
+            REG_A 	        :out	std_logic_vector(15 downto 0);
+            REG_X 	        :out	std_logic_vector(15 downto 0);
+            REG_Y 	        :out	std_logic_vector(15 downto 0);
+            REG_SP 	        :out	std_logic_vector(15 downto 0);
+            REG_PC 	        :out	std_logic_vector(15 downto 0);
+			REG_Proc        :out	std_logic_vector(7 downto 0);
+			REG_DBR         :out	std_logic_vector(7 downto 0);
+            state_machine   :out    std_logic_vector(15 downto 0);
+            VPB             :out    STD_LOGIC);
 end Soft_65C816;
 
 architecture Behavioral of Soft_65C816 is
@@ -187,7 +188,7 @@ architecture Behavioral of Soft_65C816 is
 
 begin
 
-
+    state_machine <= state_machine_onehot;
 	Addr_Bus<=	address_out;
 	REG_A 	<=	A_REG;
 	REG_X 	<=	X_REG;
@@ -233,7 +234,7 @@ end process;
 	--
 	--
 
-	state_machine:
+	state_machine_process:
 	process (clk, reset) is
 
 		variable effective_memeory_pointer_temp : std_logic_vector (23 downto 0);

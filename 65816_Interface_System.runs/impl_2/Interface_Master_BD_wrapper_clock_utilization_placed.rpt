@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Wed Mar 30 23:11:30 2016
+| Date         : Thu Mar 31 17:53:18 2016
 | Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 | Command      : report_clock_utilization -file Interface_Master_BD_wrapper_clock_utilization_placed.rpt
 | Design       : Interface_Master_BD_wrapper
@@ -22,6 +22,7 @@ Table of Contents
 8. Net wise resources used in clock region X0Y0
 9. Net wise resources used in clock region X1Y0
 10. Net wise resources used in clock region X0Y1
+11. Net wise resources used in clock region X1Y1
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -29,8 +30,8 @@ Table of Contents
 +-------+------+-----------+-----------+
 | Type  | Used | Available | Num Fixed |
 +-------+------+-----------+-----------+
-| BUFG  |    2 |        32 |         0 |
-| BUFH  |    0 |        48 |         0 |
+| BUFG  |    5 |        32 |         0 |
+| BUFH  |    2 |        48 |         0 |
 | BUFIO |    0 |         8 |         0 |
 | MMCM  |    1 |         2 |         0 |
 | PLL   |    0 |         2 |         0 |
@@ -48,8 +49,21 @@ Table of Contents
 | Index | BUFG Cell                                                                         | Net Name                                                  | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------------------------------------------------------------------+-----------------------------------------------------------+------+-------+-------+---------------+-----------+
 |     1 | Interface_Master_BD_i/clk_wiz_0/U0/clkf_buf                                       | Interface_Master_BD_i/clk_wiz_0/U0/CLKFBIN                |    1 |     1 |    no |         1.752 |     0.088 |
-|     2 | Interface_Master_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 | 1569 |   494 |    no |         1.888 |     0.225 |
+|     2 | Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf                                    | Interface_Master_BD_i/clk_wiz_0/U0/clk_out2               |    5 |     3 |    no |         1.791 |     0.118 |
+|     3 | reset_65816_module_IBUF_BUFG_inst                                                 | reset_65816_module_IBUF_BUFG                              |  152 |   109 |    no |         1.948 |     0.377 |
+|     4 | Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf                                    | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1               |  297 |   195 |    no |         2.901 |     1.237 |
+|     5 | Interface_Master_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 | 1432 |   452 |    no |         1.888 |     0.225 |
 +-------+-----------------------------------------------------------------------------------+-----------------------------------------------------------+------+-------+-------+---------------+-----------+
+
+
++-------+---------------------------------------------------+------------------------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                   |                                                                                    |   Num Loads  |       |               |           |
++-------+---------------------------------------------------+------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | BUFH Cell                                         | Net Name                                                                           | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+---------------------------------------------------+------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf_en | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk |    8 |     1 |    no |         0.954 |     0.065 |
+|     2 | Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf_en | Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk |    8 |     1 |    no |         0.994 |     0.072 |
++-------+---------------------------------------------------+------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
 +-------+--------------------------------------------------+-----------------------------------------------------------------------------+--------------+-------+---------------+-----------+
@@ -58,6 +72,8 @@ Table of Contents
 | Index | MMCM Cell                                        | Net Name                                                                    | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+--------------------------------------------------+-----------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 |     1 | Interface_Master_BD_i/clk_wiz_0/U0/mmcm_adv_inst | Interface_Master_BD_i/clk_wiz_0/U0/clkfbout_Interface_Master_BD_clk_wiz_0_0 |    1 |     1 |    no |         1.760 |     0.088 |
+|     2 | Interface_Master_BD_i/clk_wiz_0/U0/mmcm_adv_inst | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0 |    2 |     2 |    no |         1.760 |     0.518 |
+|     3 | Interface_Master_BD_i/clk_wiz_0/U0/mmcm_adv_inst | Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0 |    2 |     2 |    no |         1.760 |     0.518 |
 +-------+--------------------------------------------------+-----------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -73,6 +89,16 @@ Table of Contents
 6. Details of Local Clocks
 --------------------------
 
++-------+----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                                                                                      |                                                                                                                          |   Num Loads  |       |               |           |
++-------+----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | Local Clk Src                                                                                                        | Net Name                                                                                                                 | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/addressing_on_reg       | Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on                   |   16 |    11 |    no |         1.525 |     1.243 |
+|     2 | Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/memory_calculate_on_reg | Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg |   18 |     9 |    no |         1.441 |     1.117 |
++-------+----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+
+
 7. Clock Regions : Key Resource Utilization
 -------------------------------------------
 
@@ -81,10 +107,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1081 |  8800 |   47 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  102 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  314 |  8800 |   23 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y0              |    5 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1288 |  8800 |   54 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  255 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  159 |  8800 |   16 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    4 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
@@ -92,11 +118,15 @@ Table of Contents
 8. Net wise resources used in clock region X0Y0
 -----------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                       Clock Net Name                      |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1081 |    47 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                   Clock Net Name                                   |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------------------------------------+
+| BUFGCTRL    |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    4 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/clk_out2                                        |
+| BUFH        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk |
+| BUFH        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk |
+| BUFGCTRL    |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  231 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1                                        |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1014 |    54 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0                          |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------------------------------------+
 
 
 9. Net wise resources used in clock region X1Y0
@@ -106,7 +136,8 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                       Clock Net Name                      |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/CLKFBIN                |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 | 102 |     0 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
+| BUFGCTRL    |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  65 |     0 |        0 | Interface_Master_BD_i/clk_wiz_0/U0/clk_out1               |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 | 183 |     0 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
 
 
@@ -116,14 +147,27 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                       Clock Net Name                      |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 314 |    23 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 159 |    16 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
+
+
+11. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                       Clock Net Name                      |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   4 |     0 |        0 | Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------+
 
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y1 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y4 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y1 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf]
+set_property LOC BUFGCTRL_X0Y3 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf]
 set_property LOC BUFGCTRL_X0Y0 [get_cells Interface_Master_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
+set_property LOC BUFGCTRL_X0Y2 [get_cells reset_65816_module_IBUF_BUFG_inst]
 
 # Location of IO Clock Primitives
 
@@ -131,6 +175,8 @@ set_property LOC BUFGCTRL_X0Y0 [get_cells Interface_Master_BD_i/processing_syste
 set_property LOC MMCME2_ADV_X0Y0 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/mmcm_adv_inst]
 
 # Location of BUFH Clock Primitives
+set_property LOC BUFHCE_X0Y0 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf_en]
+set_property LOC BUFHCE_X0Y1 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf_en]
 
 # Location of BUFR Clock Primitives
 
@@ -139,12 +185,63 @@ set_property LOC MMCME2_ADV_X0Y0 [get_cells Interface_Master_BD_i/clk_wiz_0/U0/m
 # Location of PLL Clock Primitives
 
 # Location of IO Primitives which is load of clock spine
+set_property LOC IOB_X0Y20 [get_cells clk_test_OBUF_inst]
 
 # Location of clock ports
+set_property LOC IOB_X0Y2 [get_ports reset_65816_module]
+
+# Clock net "Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on" driven by instance "Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/addressing_on_reg" located at site "SLICE_X9Y24"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/decode_on] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg" driven by instance "Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/memory_calculate_on_reg" located at site "SLICE_X9Y24"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/AXIinterfacefor65816_0/U0/AXIinterfacefor65816_v1_0_S00_AXI_inst/HEART/n_0_memory_calculate_on_reg] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Interface_Master_BD_i/clk_wiz_0/U0/clk_out1" driven by instance "Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=clk_test_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/clk_wiz_0/U0/clk_out1"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk" driven by instance "Interface_Master_BD_i/clk_wiz_0/U0/clkout1_buf_en" located at site "BUFHCE_X0Y0"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out1_Interface_Master_BD_clk_wiz_0_0_en_clk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "Interface_Master_BD_i/clk_wiz_0/U0/clk_out2" driven by instance "Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/clk_wiz_0/U0/clk_out2"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk" driven by instance "Interface_Master_BD_i/clk_wiz_0/U0/clkout2_buf_en" located at site "BUFHCE_X0Y1"
+#startgroup
+create_pblock CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk
+add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk"}]]]
+resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/clk_wiz_0/U0/clk_out2_Interface_Master_BD_clk_wiz_0_0_en_clk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
 
 # Clock net "Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0" driven by instance "Interface_Master_BD_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y0"
 #startgroup
 create_pblock CLKAG_Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0
 add_cells_to_pblock [get_pblocks  CLKAG_Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=Interface_Master_BD_i/clk_wiz_0/U0/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0"}]]]
 resize_pblock [get_pblocks CLKAG_Interface_Master_BD_i/processing_system7_0/inst/FCLK_CLK0] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "reset_65816_module_IBUF_BUFG" driven by instance "reset_65816_module_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock CLKAG_reset_65816_module_IBUF_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_reset_65816_module_IBUF_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="reset_65816_module_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_reset_65816_module_IBUF_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup

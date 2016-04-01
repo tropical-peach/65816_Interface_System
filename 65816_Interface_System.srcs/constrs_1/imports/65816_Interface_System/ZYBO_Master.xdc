@@ -11,13 +11,13 @@
 
 ##Switches
 ##IO_L19N_T3_VREF_35
-#set_property PACKAGE_PIN G15 [get_ports {sw[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
+set_property PACKAGE_PIN G15 [get_ports {resetn}]
+set_property IOSTANDARD LVCMOS33 [get_ports {resetn}]
 
 ##IO_L24P_T3_34
-#set_property PACKAGE_PIN P15 [get_ports {sw[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
-
+set_property PACKAGE_PIN P15 [get_ports {reset_65816_module}]
+set_property IOSTANDARD LVCMOS33 [get_ports {reset_65816_module}]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets reset_65816_module_IBUF]
 ##IO_L4N_T0_34
 #set_property PACKAGE_PIN W13 [get_ports {sw[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {sw[2]}]
@@ -28,8 +28,8 @@
 
 ##Buttons
 ##IO_L20N_T3_34
-set_property PACKAGE_PIN R18 [get_ports {resetn}]
-set_property IOSTANDARD LVCMOS33 [get_ports {resetn}]
+#set_property PACKAGE_PIN R18 [get_ports {btn0}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {resetn}]
 
 ##IO_L24N_T3_34
 #set_property PACKAGE_PIN P16 [get_ports {btn[1]}]
@@ -195,12 +195,12 @@ set_property IOSTANDARD LVCMOS33 [get_ports {locked}]
 
 ##Pmod Header JB
 ##IO_L15N_T2_DQS_34
-#set_property PACKAGE_PIN U20 [get_ports {jb_n[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[0]}]
+set_property PACKAGE_PIN U20 [get_ports {clk_test}]
+set_property IOSTANDARD LVCMOS33 [get_ports {clk_test}]
 
 ##IO_L15P_T2_DQS_34
-#set_property PACKAGE_PIN T20 [get_ports {jb_p[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[0]}]
+set_property PACKAGE_PIN T20 [get_ports {clk_test}]
+set_property IOSTANDARD LVCMOS33 [get_ports {clk_test}]
 
 ##IO_L16N_T2_34
 #set_property PACKAGE_PIN W20 [get_ports {jb_n[1]}]
