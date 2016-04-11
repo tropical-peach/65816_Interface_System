@@ -154,7 +154,7 @@ proc create_root_design { parentCell } {
   set resetn [ create_bd_port -dir I -type rst resetn ]
 
   # Create instance: AXIinterfacefor65816_0, and set properties
-  set AXIinterfacefor65816_0 [ create_bd_cell -type ip -vlnv rad-:user:AXIinterfacefor65816:4.0 AXIinterfacefor65816_0 ]
+  set AXIinterfacefor65816_0 [ create_bd_cell -type ip -vlnv rad-:user:AXIinterfacefor65816:5.0 AXIinterfacefor65816_0 ]
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.1 clk_wiz_0 ]

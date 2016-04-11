@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Thu Mar 31 17:48:21 2016
+| Date         : Mon Apr 11 02:58:06 2016
 | Host         : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 | Command      : report_utilization -file Interface_Master_BD_wrapper_utilization_synth.rpt -pb Interface_Master_BD_wrapper_utilization_synth.pb
 | Design       : Interface_Master_BD_wrapper
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3120 |     0 |     17600 | 17.72 |
-|   LUT as Logic             | 3050 |     0 |     17600 | 17.32 |
+| Slice LUTs*                | 3379 |     0 |     17600 | 19.19 |
+|   LUT as Logic             | 3309 |     0 |     17600 | 18.80 |
 |   LUT as Memory            |   70 |     0 |      6000 |  1.16 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   70 |     0 |           |       |
-| Slice Registers            | 1862 |     0 |     35200 |  5.28 |
-|   Register as Flip Flop    | 1797 |     0 |     35200 |  5.10 |
+| Slice Registers            | 1901 |     0 |     35200 |  5.40 |
+|   Register as Flip Flop    | 1836 |     0 |     35200 |  5.21 |
 |   Register as Latch        |   65 |     0 |     35200 |  0.18 |
-| F7 Muxes                   |  115 |     0 |      8800 |  1.30 |
+| F7 Muxes                   |  118 |     0 |      8800 |  1.34 |
 | F8 Muxes                   |    0 |     0 |      4400 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -59,7 +59,7 @@ Table of Contents
 | 6     |          Yes |           - |          Set |
 | 182   |          Yes |           - |        Reset |
 | 100   |          Yes |         Set |            - |
-| 1574  |          Yes |       Reset |            - |
+| 1613  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,17 +148,17 @@ Table of Contents
 +------------+------+----------------------+
 |  Ref Name  | Used |  Functional Category |
 +------------+------+----------------------+
-| FDRE       | 1574 |         Flop & Latch |
-| LUT6       | 1405 |                  LUT |
-| LUT5       |  456 |                  LUT |
-| LUT4       |  419 |                  LUT |
-| LUT3       |  377 |                  LUT |
+| FDRE       | 1613 |         Flop & Latch |
+| LUT6       | 1546 |                  LUT |
+| LUT5       |  528 |                  LUT |
+| LUT3       |  475 |                  LUT |
+| LUT4       |  458 |                  LUT |
+| LUT2       |  355 |                  LUT |
 | LUT1       |  351 |                  LUT |
-| LUT2       |  349 |                  LUT |
-| CARRY4     |  141 |           CarryLogic |
+| CARRY4     |  137 |           CarryLogic |
 | BIBUF      |  130 |                   IO |
+| MUXF7      |  118 |                MuxFx |
 | FDCE       |  117 |         Flop & Latch |
-| MUXF7      |  115 |                MuxFx |
 | FDSE       |  100 |         Flop & Latch |
 | LDCE       |   65 |         Flop & Latch |
 | SRLC32E    |   47 |   Distributed Memory |

@@ -1,0 +1,256 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 12158
+
+Current time: 	4/8/16 7:59:41 PM
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 3.19.0-25-generic
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0.0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/opt/Xilinx/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	steven
+User directory: /home/steven/Desktop/65816_Interface_System/65C816_Repo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: /home/steven/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/steven/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	144 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,799 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.5s
+// Tcl Message: INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information. 
+// Tcl Message: #----------------------------------------------------------- # Vivado v2014.4 (64-bit) # SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014 # Start of session at: Fri Apr  8 19:59:26 2016 # Process ID: 12158 # Log file: /home/steven/Desktop/65816_Interface_System/65C816_Repo/vivado.log # Journal file: /home/steven/Desktop/65816_Interface_System/65C816_Repo/vivado.jou #----------------------------------------------------------- 
+// Tcl Message: start_gui 
+// [GUI Memory]: 29 MB (+27546kb) [00:00:06]
+// [Engine Memory]: 4,799 MB (+4881123kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,799 MB. GUI used memory: 19 MB. Current time: 4/8/16 7:59:43 PM
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr", 0); // s:v (JViewport:JComponent, ch:JFrame)
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+20510kb) [00:00:33]
+// [Engine Memory]: 4,871 MB (+74739kb) [00:00:33]
+// [Engine Memory]: 4,912 MB (+42926kb) [00:00:35]
+// [Engine Memory]: 4,928 MB (+17559kb) [00:00:37]
+// [GUI Memory]: 59 MB (+11694kb) [00:00:38]
+// [Engine Memory]: 4,946 MB (+18874kb) [00:00:38]
+// Tcl Message: open_project /home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steven/Desktop/65816_Interface_System/65816_Interface_System.ipdefs/Vivado_Custom_IP_Repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,956 MB. GUI used memory: 29 MB. Current time: 4/8/16 8:00:14 PM
+// [Engine Memory]: 4,958 MB (+12591kb) [00:00:41]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+16kb) [00:00:43]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+666kb) [00:00:43]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: 65816_Interface_System; location: /home/steven/Desktop/65816_Interface_System; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 5759.395 ; gain = 111.445 ; free physical = 6571 ; free virtual = 14699 
+// Elapsed time: 12 seconds
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 61 MB (+1452kb) [00:00:57]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// cm:N (ch:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: open_bd_design {/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/Interface_Master_BD.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_71M Adding component instance block -- rad-:user:AXIinterfacefor65816:4.0 - AXIinterfacefor65816_0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 4,965 MB (+6856kb) [00:01:00]
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 4,988 MB (+24121kb) [00:01:01]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <Interface_Master_BD> from BD file </home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/Interface_Master_BD.bd> 
+// [Engine Memory]: 4,993 MB (+4997kb) [00:01:02]
+// TclEventType: RSB_CONNECTION_CHANGE
+// [GUI Memory]: 63 MB (+1283kb) [00:01:03]
+// [Engine Memory]: 5,002 MB (+9654kb) [00:01:03]
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 5804.234 ; gain = 44.840 ; free physical = 6491 ; free virtual = 14651 
+// 'aX' command handler elapsed time: 6 seconds
+// [GUI Memory]: 67 MB (+4550kb) [00:01:04]
+dismissDialog("Open Block Design"); // cm:N (ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,007 MB. GUI used memory: 44 MB. Current time: 4/8/16 8:00:38 PM
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// [Engine Memory]: 5,007 MB (+5246kb) [00:01:06]
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// [GUI Memory]: 69 MB (+2274kb) [00:01:09]
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// [GUI Memory]: 75 MB (+6393kb) [00:01:10]
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// [Engine Memory]: 5,011 MB (+4767kb) [00:01:13]
+// [Engine Memory]: 5,012 MB (+1048kb) [00:01:17]
+// [GUI Memory]: 75 MB (+153kb) [00:03:02]
+// [GUI Memory]: 75 MB (+26kb) [00:03:07]
+// [GUI Memory]: 76 MB (+226kb) [00:03:12]
+// [GUI Memory]: 76 MB (+26kb) [00:03:17]
+// [GUI Memory]: 76 MB (+182kb) [00:03:22]
+// [GUI Memory]: 76 MB (+27kb) [00:16:12]
+// [GUI Memory]: 77 MB (+815kb) [00:16:17]
+// [GUI Memory]: 77 MB (+170kb) [00:16:22]
+// [GUI Memory]: 77 MB (+23kb) [00:16:27]
+// [GUI Memory]: 77 MB (+169kb) [00:16:32]
+// [GUI Memory]: 77 MB (+23kb) [00:16:37]
+// [GUI Memory]: 77 MB (+32kb) [00:22:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,012 MB. GUI used memory: 37 MB. Current time: 4/8/16 8:30:43 PM
+// [GUI Memory]: 77 MB (+21kb) [00:57:16]
+// [GUI Memory]: 78 MB (+675kb) [00:57:21]
+// [GUI Memory]: 78 MB (+142kb) [00:57:26]
+// [GUI Memory]: 78 MB (+46kb) [00:57:31]
+// [GUI Memory]: 78 MB (+135kb) [00:57:36]
+// [GUI Memory]: 79 MB (+633kb) [00:57:41]
+// [GUI Memory]: 79 MB (+177kb) [00:57:46]
+// [GUI Memory]: 79 MB (+16kb) [00:57:51]
+// [GUI Memory]: 79 MB (+179kb) [00:57:56]
+// [GUI Memory]: 80 MB (+622kb) [00:58:01]
+// [GUI Memory]: 80 MB (+147kb) [00:58:06]
+// [GUI Memory]: 80 MB (+46kb) [00:58:11]
+// [GUI Memory]: 80 MB (+150kb) [00:58:16]
+// [GUI Memory]: 80 MB (+673kb) [00:58:21]
+// [GUI Memory]: 81 MB (+132kb) [00:58:26]
+// [GUI Memory]: 81 MB (+58kb) [00:58:31]
+// [GUI Memory]: 81 MB (+136kb) [00:58:36]
+// [GUI Memory]: 81 MB (+638kb) [00:58:41]
+// [GUI Memory]: 82 MB (+177kb) [00:58:46]
+// [GUI Memory]: 82 MB (+11kb) [00:58:51]
+// [GUI Memory]: 82 MB (+182kb) [00:58:56]
+// [GUI Memory]: 82 MB (+624kb) [00:59:01]
+// [GUI Memory]: 83 MB (+142kb) [00:59:06]
+// [GUI Memory]: 83 MB (+51kb) [00:59:11]
+// [GUI Memory]: 83 MB (+142kb) [00:59:16]
+// [GUI Memory]: 83 MB (+668kb) [00:59:21]
+// [GUI Memory]: 83 MB (+135kb) [00:59:26]
+// [GUI Memory]: 83 MB (+11kb) [00:59:31]
+// [GUI Memory]: 84 MB (+179kb) [00:59:36]
+// [GUI Memory]: 84 MB (+638kb) [00:59:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,012 MB. GUI used memory: 31 MB. Current time: 4/8/16 9:00:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,012 MB. GUI used memory: 31 MB. Current time: 4/8/16 9:30:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,012 MB. GUI used memory: 31 MB. Current time: 4/8/16 10:00:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,012 MB. GUI used memory: 31 MB. Current time: 4/8/16 10:30:43 PM
+// [Engine Memory]: 5,018 MB (+6062kb) [02:34:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,018 MB. GUI used memory: 32 MB. Current time: 4/8/16 11:00:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,018 MB. GUI used memory: 31 MB. Current time: 4/8/16 11:30:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,018 MB. GUI used memory: 31 MB. Current time: 4/9/16 12:00:43 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,018 MB. GUI used memory: 31 MB. Current time: 4/9/16 12:30:43 AM
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// cm:N (ch:JFrame):  Re-customize IP : addNotify
+// [Engine Memory]: 5,044 MB (+26886kb) [04:41:34]
+// q:N (ch:JFrame): Re-customize IP: addNotify
+// [Engine Memory]: 5,045 MB (+1048kb) [04:41:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 39 MB. Current time: 4/9/16 12:41:09 AM
+// Elapsed time: 16825 seconds
+dismissDialog("Re-customize IP"); // cm:N (ch:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cy:g (H:JPanel, q:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cy:g (H:JPanel, q:N)
+closeMainWindow("65816_Interface_System - [/home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr] - Vivado 2014.4"); // ch:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 40 MB. Current time: 4/9/16 1:11:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 41 MB. Current time: 4/9/16 1:41:13 AM
+// [GUI Memory]: 84 MB (+30kb) [06:04:54]
+// [GUI Memory]: 84 MB (+8kb) [06:04:59]
+// [GUI Memory]: 85 MB (+618kb) [06:05:04]
+// [GUI Memory]: 85 MB (+55kb) [06:05:09]
+// [GUI Memory]: 85 MB (+138kb) [06:05:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 41 MB. Current time: 4/9/16 2:11:13 AM
+// [GUI Memory]: 85 MB (+16kb) [06:36:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 41 MB. Current time: 4/9/16 2:41:13 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 40 MB. Current time: 4/9/16 3:11:14 AM
+// Elapsed time: 10600 seconds
+selectButton(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "project_summary"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 41 MB. Current time: 4/9/16 3:41:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 43 MB. Current time: 4/9/16 4:11:14 AM
+// [GUI Memory]: 85 MB (+315kb) [08:33:37]
+// [GUI Memory]: 86 MB (+259kb) [08:33:42]
+// [GUI Memory]: 86 MB (+14kb) [08:33:47]
+// [GUI Memory]: 86 MB (+656kb) [08:33:52]
+// [GUI Memory]: 86 MB (+58kb) [08:33:57]
+// [GUI Memory]: 87 MB (+206kb) [08:34:02]
+// [GUI Memory]: 87 MB (+462kb) [08:34:07]
+// [GUI Memory]: 87 MB (+250kb) [08:34:12]
+// [GUI Memory]: 87 MB (+12kb) [08:34:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 43 MB. Current time: 4/9/16 4:41:14 AM
+// [GUI Memory]: 87 MB (+74kb) [09:05:32]
+// [GUI Memory]: 87 MB (+2kb) [09:05:37]
+// [GUI Memory]: 87 MB (+212kb) [09:05:42]
+// [GUI Memory]: 88 MB (+529kb) [09:05:47]
+// [GUI Memory]: 88 MB (+196kb) [09:05:52]
+// [GUI Memory]: 88 MB (+13kb) [09:05:57]
+// [GUI Memory]: 89 MB (+727kb) [09:06:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 42 MB. Current time: 4/9/16 5:11:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 44 MB. Current time: 4/9/16 5:41:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 44 MB. Current time: 4/9/16 6:11:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 44 MB. Current time: 4/9/16 6:41:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 44 MB. Current time: 4/9/16 7:11:14 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 41 MB. Current time: 4/9/16 2:43:42 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,045 MB. GUI used memory: 43 MB. Current time: 4/9/16 3:13:46 PM

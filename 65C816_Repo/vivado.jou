@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr  8 19:59:26 2016
+# Process ID: 12158
+# Log file: /home/steven/Desktop/65816_Interface_System/65C816_Repo/vivado.log
+# Journal file: /home/steven/Desktop/65816_Interface_System/65C816_Repo/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/steven/Desktop/65816_Interface_System/65816_Interface_System.xpr
+open_bd_design {/home/steven/Desktop/65816_Interface_System/65816_Interface_System.srcs/sources_1/bd/Interface_Master_BD/Interface_Master_BD.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout

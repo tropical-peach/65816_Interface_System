@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
---Date        : Thu Mar 31 17:26:54 2016
+--Date        : Mon Apr 11 02:53:44 2016
 --Host        : Daedalus running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target Interface_Master_BD_wrapper.bd
 --Design      : Interface_Master_BD_wrapper

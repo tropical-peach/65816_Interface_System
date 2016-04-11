@@ -33,10 +33,10 @@
         <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="ip/Interface_Master_BD_AXIinterfacefor65816_0_0/Interface_Master_BD_AXIinterfacefor65816_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="ip/Interface_Master_BD_clk_wiz_0_0/Interface_Master_BD_clk_wiz_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="ip/Interface_Master_BD_processing_system7_0_0/Interface_Master_BD_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="hw_handoff/Interface_Master_BD_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="ip/Interface_Master_BD_auto_pc_0/Interface_Master_BD_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="hw_handoff/Interface_Master_BD.hwh"/>
         <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="Interface_Master_BD_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="hw_handoff/Interface_Master_BD.hwh"/>
+        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="ip/Interface_Master_BD_auto_pc_0/Interface_Master_BD_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="Interface_Master_BD.bd" FileRelPathName="hw_handoff/Interface_Master_BD_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Interface_Master_BD/hdl/Interface_Master_BD_wrapper.vhd">
         <FileInfo>
@@ -144,4 +144,5 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
   </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
 </Project>

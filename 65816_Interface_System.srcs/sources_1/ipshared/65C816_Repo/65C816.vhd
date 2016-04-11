@@ -36,6 +36,22 @@
 ----------------------------------------------------------------------------------
 
 
+--   ██████    ███████   ███████   ████████
+--  ██░░░░██  ██░░░░░██ ░██░░░░██ ░██░░░░░ 
+-- ██    ░░  ██     ░░██░██   ░██ ░██      
+--░██       ░██      ░██░███████  ░███████ 
+--░██       ░██      ░██░██░░░██  ░██░░░░  
+--░░██    ██░░██     ██ ░██  ░░██ ░██      
+-- ░░██████  ░░███████  ░██   ░░██░████████
+--  ░░░░░░    ░░░░░░░   ░░     ░░ ░░░░░░░░ 
+-- ████     ████   ███████   ███████   ██     ██ ██       ████████
+--░██░██   ██░██  ██░░░░░██ ░██░░░░██ ░██    ░██░██      ░██░░░░░ 
+--░██░░██ ██ ░██ ██     ░░██░██    ░██░██    ░██░██      ░██      
+--░██ ░░███  ░██░██      ░██░██    ░██░██    ░██░██      ░███████ 
+--░██  ░░█   ░██░██      ░██░██    ░██░██    ░██░██      ░██░░░░  
+--░██   ░    ░██░░██     ██ ░██    ██ ░██    ░██░██      ░██      
+--░██        ░██ ░░███████  ░███████  ░░███████ ░████████░████████
+--░░         ░░   ░░░░░░░   ░░░░░░░    ░░░░░░░  ░░░░░░░░ ░░░░░░░░ 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
@@ -43,23 +59,25 @@ use IEEE.numeric_std.ALL;
 use work.SNES65816func.all;
 
 entity Soft_65C816 is
-	Port ( clk              :in     STD_LOGIC;							-- 	Main CLK for system
-            tru_clk	        :in     std_logic;						--	True clk for system
-            reset		    :in     std_logic;					--	Reset Signal
-            Addr_Bus        :out    STD_LOGIC_VECTOR (23 downto 0);--	Address Bus
-            D_BUS           :in     STD_LOGIC_VECTOR (31 downto 0);	--	Data Bus
-            EMULATION_SELECT:out    STD_LOGIC;			--	Emulation Bit
-            RDY             :out    STD_LOGIC;
-			DATA_RDY        :in     STD_LOGIC;
-            REG_A 	        :out	std_logic_vector(15 downto 0);
-            REG_X 	        :out	std_logic_vector(15 downto 0);
-            REG_Y 	        :out	std_logic_vector(15 downto 0);
-            REG_SP 	        :out	std_logic_vector(15 downto 0);
-            REG_PC 	        :out	std_logic_vector(15 downto 0);
-			REG_Proc        :out	std_logic_vector(7 downto 0);
-			REG_DBR         :out	std_logic_vector(7 downto 0);
-            state_machine   :out    std_logic_vector(15 downto 0);
-            VPB             :out    STD_LOGIC);
+		Port ( clk              :in   STD_LOGIC;							       --	Main CLK for system
+					 tru_clk	        :in   std_logic;						         --	True clk for system
+					 reset            :in   std_logic;					           --	Reset Signal
+					 Addr_Bus         :out  STD_LOGIC_VECTOR (23 downto 0);--	Address Bus
+					 D_BUS            :in   STD_LOGIC_VECTOR (31 downto 0);--	Data Bus IN
+					 D_BUS_out        :out  STD_LOGIC_VECTOR (23 downto 0);--	Data Bus OUT
+					 EMULATION_SELECT :out  STD_LOGIC;			               --	Emulation Bit
+					 RDY              :out  STD_LOGIC;
+					 DATA_RDY         :in   STD_LOGIC;
+					 REG_A 	          :out	std_logic_vector(15 downto 0);
+					 REG_X 	          :out	std_logic_vector(15 downto 0);
+					 REG_Y 	          :out	std_logic_vector(15 downto 0);
+					 REG_SP 	        :out	std_logic_vector(15 downto 0);
+					 REG_PC 	        :out	std_logic_vector(15 downto 0);
+					 REG_Proc         :out	std_logic_vector(7 downto 0);
+					 REG_DBR          :out	std_logic_vector(7 downto 0);
+					 state_machine    :out  std_logic_vector(15 downto 0);
+					 RW               :out  std_logic ;                     --  Read or write bit
+					 VPB              :out  STD_LOGIC);
 end Soft_65C816;
 
 architecture Behavioral of Soft_65C816 is
@@ -189,6 +207,7 @@ architecture Behavioral of Soft_65C816 is
 begin
 
     state_machine <= state_machine_onehot;
+    D_BUS_out <= read_out_bank & read_out;
 	Addr_Bus<=	address_out;
 	REG_A 	<=	A_REG;
 	REG_X 	<=	X_REG;
@@ -199,31 +218,31 @@ begin
 	REG_DBR  <=	DBR;
 	--
 	--	This is the true CPU clock for the processor
-	--	It runs at 3.58 MHz and allows s6 to continue 
+	--	It runs at a multiple of 3.58 MHz and allows s6 to continue 
 	--		to s1.
 slow_clock:
 process(tru_clk, clk, reset) is
 
 begin
 
-	if reset = '1' then 
-		tru_clk_cntr <= (others => '0');
-		ready_up <= '0';
-	elsif rising_edge(clk) then
-		if (tru_clk_cntr = tru_cpu) and (tru_clk = '1') then
-			ready_up <= '1' ;
-		end if;		
-	end if;
-	if falling_edge(clk) then
-		if ready_up ='1' then
-			tru_clk_cntr <= (others => '0');
-		end if;	
-	end if;
-		
-	if rising_edge(tru_clk) then
-		tru_clk_cntr <= std_logic_vector(unsigned(tru_clk_cntr) + 1);
-	end if;
-		
+		if reset = '1' then 
+				tru_clk_cntr <= (others => '0');
+				ready_up <= '0';
+		elsif rising_edge(clk) then
+				if (tru_clk_cntr = tru_cpu) and (tru_clk = '1') then
+						ready_up <= '1' ;
+				end if;		
+		end if;
+		if falling_edge(clk) then
+				if ready_up ='1' then
+						tru_clk_cntr <= (others => '0');
+				end if;	
+		end if;
+
+		if rising_edge(tru_clk) then
+				tru_clk_cntr <= std_logic_vector(unsigned(tru_clk_cntr) + 1);
+		end if;
+
 end process;
 
 
@@ -244,7 +263,7 @@ end process;
 		variable xfr_temp	 	: std_logic_vector (16 downto 0);
 		variable mem_temp	 	: std_logic_vector (16 downto 0);
 		variable flag_temp   : std_logic_vector (16 downto 0);
-
+        variable check_done : std_logic;
 	begin
 
 
@@ -285,7 +304,9 @@ end process;
 					write_back_value 	<=X"0000";
 					write_back_bank	<=X"00";
 					address_out			<=PC;
+					check_done := '0';
 					rdy <= '1';
+					RW <= '0';
 
 				when s1 =>
 					if state_machine_onehot = "0000000000000010"  then
@@ -1736,14 +1757,19 @@ end process;
 						READ_OUT <= write_back_value;
 						ADDRESS_OUT <= write_back_location;
 						store_back <= '0';
-						state_machine_onehot <= "0000000010000000";
+                        check_done := '1';
+                        RW <= '1';
+                        state_machine_onehot <= "0000000010000000";
 					elsif (push_to_stack = '1') then
 						read_out <= write_back_value;
 						read_out_bank <= write_back_bank;
 						address_out <= X"00" & StackPointer;
 						push_to_stack <= '0';
+                        check_done := '1';
+                        RW <= '1';                        
 						state_machine_onehot <= "0000000010000000";
 					else
+                        check_done := '1';
 						state_machine_onehot <= "0000000010000000";
 					end if;
 
@@ -1908,10 +1934,10 @@ end process;
 					memory_pointer <= X"0000" & chunk_pull (23 downto 16);
 
 				when X"3" =>
-					memory_pointer <= X"00" & chunk_pull(15 downto 8) & chunk_pull (23 downto 16);
+					memory_pointer <= X"00" & chunk_pull (23 downto 16) & chunk_pull(15 downto 8);
 
 				when X"4" =>
-					memory_pointer <= chunk_pull (7 downto 0) & chunk_pull(15 downto 8) & chunk_pull (23 downto 16);
+					memory_pointer <= chunk_pull (23 downto 16) & chunk_pull(15 downto 8)  & chunk_pull (7 downto 0);
 
 				when others =>
 					memory_pointer <= (others => '0');

@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: rad-:user:AXIinterfacefor65816:4.0
--- IP Revision: 2
+-- IP VLNV: rad-:user:AXIinterfacefor65816:5.0
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

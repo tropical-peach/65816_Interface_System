@@ -662,7 +662,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>AXIinterfacefor65816_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="AXIinterfacefor65816" spirit:vendor="rad-" spirit:version="4.0"/>
+        <spirit:componentRef spirit:library="user" spirit:name="AXIinterfacefor65816" spirit:vendor="rad-" spirit:version="5.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">Interface_Master_BD_AXIinterfacefor65816_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
